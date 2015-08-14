@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    haxe-rails (0.0.2)
+    haxe-rails (0.1.0)
       haxe-cli-proxy
       rails
       railties

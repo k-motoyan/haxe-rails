@@ -1,5 +1,6 @@
 # HaxeRails
 
+[![wercker status](https://app.wercker.com/status/eef2f567ea674b9df30a472759d85b16/s/master "wercker status")](https://app.wercker.com/project/bykey/eef2f567ea674b9df30a472759d85b16)
 [![Test Coverage](https://codeclimate.com/github/k-motoyan/haxe-rails/badges/coverage.svg)](https://codeclimate.com/github/k-motoyan/haxe-rails/coverage)
 [![Code Climate](https://codeclimate.com/github/k-motoyan/haxe-rails/badges/gpa.svg)](https://codeclimate.com/github/k-motoyan/haxe-rails)
 
