@@ -8,7 +8,13 @@ Haxe adapter for the Rails asset pipeline.
 
 ## Installation
 
-TODO
+Add the gem to Gemfile.
+ 
+```
+gem 'haxe-rails'
+```
+
+Run `bundle install`.
     
 ## Usage
 
