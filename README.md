@@ -44,7 +44,7 @@ rails_project/
 3 Add a postscript to hxml path in under the assets/*.js file.
 
 ```diff
-+ haxe_project/compile
++ //= require haxe_project/compile
 ```
 
 Or Add a postscript to a hxml file path in `Rails.application.config.assets.precompile` of the `config/initizlizers/assets.rb`.
