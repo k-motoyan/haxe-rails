@@ -1,3 +1,5 @@
+require 'rails/railtie'
+
 module Haxe
   module Rails
     class Railtie < ::Rails::Railtie

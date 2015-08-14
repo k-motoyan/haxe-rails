@@ -1,0 +1,24 @@
+box: ruby:2.2.2
+build:
+  steps:
+    - script:
+      name: install dependences packages
+      code: sudo apt-get -y install wget
+    - script:
+      name: export haxe envaironments
+      code: |
+        export HAXE_DL_URL=http://haxe.org/website-content/downloads/3.2.0/downloads/haxe-3.2.0-linux64.tar.gz
+        export HAXE_PATH=$WERCKER_CACHE_DIR/haxe
+        export HAXE_STD_PATH=$HAXE_PATH/std
+        export PATH=$HAXE_PATH:$PATH
+    - script:
+      name: install haxe
+      code: |
+        if [ ! -e $HAXE_PATH ]; then
+          mkdir -p $HAXE_PATH
+          wget -O - $HAXE_DL_URL | tar xzf - --strip=1 -C $HAXE_PATH
+        fi
+    - bundle-install
+    - script:
+      name: rspec
+      code: bundle exec rspec
