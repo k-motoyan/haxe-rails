@@ -10,3 +10,4 @@ vendor/
 coverage/
 spec/fixtures/haxe_projects/**/*.js
 spec/fixtures/haxe_projects/**/*.py
+.tags*

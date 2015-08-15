@@ -1,12 +1,9 @@
 require 'tilt/template'
+require 'haxe/rails/compiler'
 
 module Haxe
   module Rails
     class Template < ::Tilt::Template
-      def initialize_engine
-        require 'haxe/rails/compiler'
-      end
-
       def prepare
       end
 
