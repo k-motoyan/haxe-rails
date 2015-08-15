@@ -1,4 +1,5 @@
 if ENV['CODECLIMATE_REPO_TOKEN']
+  require 'rails'
   require 'codeclimate-test-reporter'
   CodeClimate::TestReporter.start
 else

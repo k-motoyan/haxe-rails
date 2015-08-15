@@ -14,14 +14,12 @@ Gem::Specification.new do |s|
   s.description = 'Haxe adapter for the Rails asset pipeline.'
   s.license     = 'MIT'
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
-  s.test_files = Dir['test/**/*']
+  s.files = Dir['lib/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.test_files = Dir['spec/**/*']
 
-  s.add_runtime_dependency 'haxe-cli-proxy'
-  s.add_runtime_dependency 'railties'
-  s.add_runtime_dependency 'sprockets'
-  s.add_runtime_dependency 'tilt'
-  s.add_runtime_dependency 'rails'
+  s.add_runtime_dependency 'haxe-cli-proxy', '>= 0.3'
+  s.add_runtime_dependency 'rails', '>= 4'
+  s.add_runtime_dependency 'tilt', '>= 2'
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'simplecov'
