@@ -54,3 +54,11 @@ Rails.application.config.assets.precompile += %w( haxe_project/compile.js )
 ```
 
 > It is necessary for the extension of hxml file to make `.js`.
+
+## Generator
+
+Generate empty project with:
+
+```
+rails g haxe:assets [project name]
+```
